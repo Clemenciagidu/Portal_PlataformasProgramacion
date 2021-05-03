@@ -1,5 +1,6 @@
 var secciones = [];
 //var rutas = [" ",index","acercade","servicios","portafolio","contacto"];
+var rutas = ["","index","acercade","servicios","stats","portafolio","contacto"];
 var bajo_logeo = ["seccion_2","seccion_2"];
 var usuario_logeado = true;
 
