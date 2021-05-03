@@ -52,10 +52,10 @@ function navegacion(event){
 	//console.log(rutas[indice]);
 	var ruta = rutas[indice]+".html";
 
-	if(controlAcceso(id) && usuario_logeado){ //asi funciona un enrutador
+	//if(controlAcceso(id) && usuario_logeado){ //asi funciona un enrutador
 		location.href = ruta; //location es un objeto en javascript que controla la navegacion 
-	}
-	else {
-		alert("Error, esta sección requiere logeo");
-	}
+	//}
+	//else {
+		//alert("Error, esta sección requiere logeo");
+	//}
 } 
