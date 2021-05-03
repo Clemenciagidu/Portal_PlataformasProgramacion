@@ -1,7 +1,7 @@
 var secciones = [];
 //var rutas = [" ",index","acercade","servicios","portafolio","contacto"];
 var rutas = ["","index","acercade","servicios","stats","portafolio","contacto"];
-var bajo_logeo = ["seccion_2","seccion_2"];
+var bajo_logeo = ["seccion_2","seccion_5"];
 var usuario_logeado = true;
 
 window.onload = init;
@@ -21,7 +21,7 @@ function asignarVariables(){
 	secciones["seccion_3"] = document.getElementById("seccion_3");
 	secciones["seccion_4"] = document.getElementById("seccion_4");
 	secciones["seccion_5"] = document.getElementById("seccion_5");
-	//secciones["seccion_6"] = document.getElementById("seccion_6");
+	secciones["seccion_6"] = document.getElementById("seccion_6");
 }
 
 function asignarEventos(){
