@@ -10,7 +10,17 @@ function init (){
 	setTimeout(hideURLbar, 0);
 	asignarVariables();
 	asignarEventos();
+	//new Splide( '.splide' ).mount();
+new Splide( '.splide', {
+	type   : 'loop',
+	padding: {
+		right: '5rem',
+		left : '5rem',
+	},
+} ).mount();
 }
+
+
 function hideURLbar(){
 	window.scrollTo(0, 1);
 }
