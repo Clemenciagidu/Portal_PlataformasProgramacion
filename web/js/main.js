@@ -10,14 +10,14 @@ function init (){
 	setTimeout(hideURLbar, 0);
 	asignarVariables();
 	asignarEventos();
-	//new Splide( '.splide' ).mount();
-new Splide( '.splide', {
-	type   : 'loop',
-	padding: {
-		right: '5rem',
-		left : '5rem',
-	},
-} ).mount();
+	new Splide( '.splide' ).mount();
+//new Splide( '.splide', {
+	//type   : 'loop',
+	//padding: {
+	//	right: '5rem',
+	//	left : '5rem',
+	//},
+//} ).mount();
 }
 
 

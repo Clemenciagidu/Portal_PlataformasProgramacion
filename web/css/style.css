@@ -159,6 +159,15 @@ header {
 	display: none;
 }
 
+.imagenBanner
+{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 /* Giving a background-color to the nav container. */
 nav { 
 	margin:0;
