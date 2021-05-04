@@ -450,6 +450,20 @@ li > a:only-child:after { content: ''; }
     text-transform: capitalize;
     font-size: 15px;
 }
+
+/*banner eso es una clase*/
+.contenedor_banner{
+    width: 100%;
+    height: 600px;
+    background: #a86161;
+    top: 0px;
+    left: 0px;
+    position: relative;
+}
+
+
+
+
 .banner-text-w3ls {
     padding: 15vw 0 18vw;
     box-sizing: border-box;
