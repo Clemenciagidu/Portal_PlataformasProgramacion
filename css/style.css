@@ -141,7 +141,7 @@ header {
     width: 100%;
     padding: 5px 0;
 	z-index: 9;
-    background-color: red;
+    background-color: #023047;
 }
 .right-p li ,.right-p li  a{
     display: inline-block;
@@ -229,7 +229,7 @@ header {
 nav { 
 	margin:0;
 	padding: 0;
-    background-color: red;
+    background-color: #023047;
 }
 
 
