@@ -4,7 +4,7 @@ var rutas = ["","index","acercade","servicios","stats","portafolio","contacto"];
 var bajo_logeo = ["seccion_2","seccion_5"];
 var usuario_logeado = true;
 //Get the button:
-mybutton = document.getElementById("myBtn");
+//mybutton = document.getElementById("myBtn");
 
 window.onload = init;
 
@@ -21,7 +21,7 @@ function init (){
 	//},
 //} ).mount();
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+//window.onscroll = function() {scrollFunction()};
 }
 
 
@@ -75,16 +75,44 @@ function navegacion(event){
 } 
 
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+//function scrollFunction() {
+  //if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //mybutton.style.display = "block";
+  //} else {
+    //mybutton.style.display = "none";
+  //}
+//}
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+//function topFunction() {
+  //document.body.scrollTop = 0; // For Safari
+  //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+//}
+
+function getDocHeight() {
+    var D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight
+    )
 }
+
+function amountscrolled(){
+    var winheight= window.innerHeight || (document.documentElement || document.body).clientHeight
+    var docheight = getDocHeight()
+    var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+    var trackLength = docheight - winheight
+    var pctScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+    console.log(pctScrolled + '% scrolled');
+    if (pctScrolled>5) {
+    	flecha.classList.remove("ocultar_flecha");
+    }
+    else{
+    	flecha.classList.add("ocultar_flecha");
+    }
+}
+
+window.addEventListener("scroll", function(){
+	amountscrolled()
+}, false);

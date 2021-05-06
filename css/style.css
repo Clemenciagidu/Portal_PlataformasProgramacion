@@ -168,7 +168,17 @@ header {
   padding-left: 15px;
 }
 
+#flecha{
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+            width: 40px;
+            height: 40px;
+        }
 
+.ocultar_flecha{
+    display: none;
+}
 
 #myBtn {
   display: none; /* Hidden by default */
