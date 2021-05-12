@@ -1006,7 +1006,8 @@ section#gallery {
 /*-- /testimonials --*/
 
 .testimonials {
-   background:#f4b200;
+   /*background:#f4b200;*/
+   background: #ffb703;
 }
 
 .test-info {
@@ -1043,7 +1044,8 @@ section#gallery {
 }
 
 .test-info p {
-    background:#011144;
+    /*background:#011144;*/
+    background:#023047;
     padding: 3em;
     font-size: 0.85em;
     border-radius: 4px;
@@ -1110,7 +1112,8 @@ h4.destination {
 }
 
 .rating {
-    background: #f4b200;
+    /*background: #f4b200;*/
+    background: #ffb703;
     position: absolute;
     right: 1%;
     top: 1%;
