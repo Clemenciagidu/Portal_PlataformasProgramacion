@@ -713,7 +713,8 @@ h4.title-hny {
 }
 
 .read-more, .read-more:hover {
-    background: #011144;
+    /*background: #011144;*/
+    background: #023047;
     color: #fff;
     padding: 0.8em 2em;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
