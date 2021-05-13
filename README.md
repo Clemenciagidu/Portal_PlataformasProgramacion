@@ -12,5 +12,8 @@ Algunos recursos online utilizados para mi web como imágenes y artículos de tr
 * https://pixabay.com/es/images/search/travel/?cat=travel&order=ec
 * http://remove.bg/
 
-![Uploading Captura de pantalla 2021-05-14 a las 15.49.39-fullpage.png…]()
+![image](https://user-images.githubusercontent.com/65585681/118186567-7f629200-b403-11eb-9295-144948d52107.png)
+
+
+
 
