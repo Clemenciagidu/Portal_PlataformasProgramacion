@@ -1,5 +1,5 @@
 # Portal_PlataformasProgramacion
-"Viajando por el Mundo" es una página web, desarrollada usando HTML, CSS y Javascript.
+"Viajando por el Mundo" es una página web, desarrollada usando HTML, CSS y Javascript. \n
 Fue desarrollada para el curso de Plataformas de Programación Empresarial - UPB - 2021.
 El link de "Viajando por el Mundo" es: https://clemenciagidu.github.io/Portal_PlataformasProgramacion/
 La plantilla utilizada de W3layouts llamada "Trip Spot a Travel Category Bootstrap Responsive Web Template", cuyo link es https://w3layouts.com/template/trip-spot-a-travel-category-bootstrap-responsive-web-template/
