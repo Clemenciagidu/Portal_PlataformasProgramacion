@@ -111,17 +111,81 @@
 
                         <form action="#" method="post">
                             <div class=" form-group contact-forms">
-                              <input type="text" id="nombre" class="form-control" placeholder="Nombre" required="">
+                              <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required="">
                             </div>
                             <div class="form-group contact-forms">
-                              <input type="email" id="email" class="form-control" placeholder="Email" required="">
+                              <input type="email" id="email" name="email" class="form-control" placeholder="Email" required="">
                             </div>
                             <div class="form-group contact-forms">
-                              <input type="text" id="telefono" class="form-control" placeholder="Teléfono" required=""> 
+                              <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Teléfono" required=""> 
                             </div>
+
+
                             <div class="form-group contact-forms">
-                              <textarea class="form-control" placeholder="Cuéntanos tus inquietudes" rows="3" required=""></textarea>
+                              <input type="password" id="clave1" name="clave1" class="form-control" placeholder="Clave" required=""> 
                             </div>
+
+                            <div class="form-group contact-forms">
+                              <input type="password" id="clave2" name="clave2" class="form-control" placeholder="Validar Clave" required=""> 
+                            </div>
+
+
+                           
+
+                            <script> 
+
+
+                                window.onload = function(){
+                                    frm = document.getElementById("form-demo");
+                                    pst = new Pristine(frm);
+
+                                    frm.addEventListener('submit', function(e){
+                                        e.preventDefault();
+                                        //check if the form is valid 
+                                        if(pst.validate())
+                                        {
+                                            procesarDatos();
+                                        }
+                                        else{
+                                            frm.classList.add("was-validated");
+                                        }
+                                    });
+                                    frm.addEventListener('reset', function(e){
+                                        frm.classList.remove("was-validated");
+                                    });
+
+
+                                };
+
+
+
+
+                                function procesarDatos(){
+
+                                    // url (required), options (optional)
+                                    fetch('scripts/script.php', {
+                                        method: 'post'
+                                        body:new FormData(frm)
+                                    }).then(function(response) {
+                                        return response.json();
+                                        
+                                    }).then(function(json){
+                                        console.log(json);
+                                    }.catch(function(err) {
+                                        // Error :(
+                                    });
+
+                                }
+
+
+
+
+
+                            </script>
+
+
+
+                            
                             <button class="btn btn-block sent-butnn">Enviar</button>
                         </form>
 
